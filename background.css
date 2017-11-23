@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #87d2d6;
+}
+
+.black-back { 
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slides {
+    
+    width: 100vw;
+    height: 100vh; 
+}
+
+
+#shot-shade {
+
+    background-color: rgba(133, 209, 213, 0.8);
+}

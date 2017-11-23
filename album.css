@@ -1,0 +1,8 @@
+.album-playlist {
+    position: fixed;
+    z-index:7800;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

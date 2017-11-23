@@ -1,0 +1,30 @@
+
+.btn {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 50px;
+}
+.buttons {
+    position: absolute;
+    z-index: 500;
+    width: 150px;
+    height: 50px;
+    bottom: 30px;
+    left: 30px;
+}
+
+#backward {
+    left: 0px;
+
+    border-right: solid 30px #609da0;
+  border-bottom: solid 30px transparent;
+  border-top: solid 30px transparent;
+
+}
+#forward {
+    right: 0px;
+    border-left: solid 30px #609da0;
+    border-bottom: solid 30px transparent;
+    border-top: solid 30px transparent;
+}

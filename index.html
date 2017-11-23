@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./background.css"/>
+        <link rel="stylesheet" href="./font.css"/>
+        <link rel="stylesheet" href="./position.css"/>
+        <link rel="stylesheet" href="./buttons.css"/>
+        <link rel="stylesheet" href="./profile.css"/>
+        <link rel="stylesheet" href="./album.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    </head>
+    <body>
+        <div class="background">
+                <span class="music-control" id="music-on">MUSE</span>
+                <iframe class="music-control" id="music-player" width="420" height="50" src="https://www.youtube.com/embed/UptuSYZ3ZSE">
+                </iframe> 
+
+                <div id="s0-1" class="slides"> 
+                    <div id="group_name_main_title" class="title center">PEPPERTONES</div>
+
+                    <div class="full-shot-shade">
+                        <div id="shot-shade" class="1">
+                            <p id="shot-shade-content">
+                            </p>
+                        </div>
+                        <img id="peppertones_img" class="img-16-9" src="./imgs/peppertones_fullshot.jpg" alt="peptone" style="display:none"/>
+                    </div> 
+                </div>
+
+                <div id="s2" class="slides" style="display:none">
+                    <p id="sayo-p" class="profile">
+                    </p>
+
+                </div>
+                <div id="s3" class="slides" style="display:none">
+                    <p id="nosh-p" class="profile">
+                    </p>
+
+                </div>
+
+                <div id="s4" class="slides" style="display:none">
+
+                    <div class="title center ">WHY I LOVE PEPPERTONES</div>
+                </div>
+                <div id="s5" class="slides" style="display:none">
+
+                    <div class="title center ">FAVORITE ALBUM</div>
+                </div>
+
+                <div id="s6" class="slides" style="display:none"> 
+                    <div class="title center black-back">ALL OF THEM</div>
+                    <img class="img-16-9" src="./imgs/peppertones_musics.png" alt="musics" style="filter: grayscale(80%)"/>
+                </div>
+                <div id="s7" class="slides" style="display:none"> 
+                    <div class="title center black-back">SPECIAL RECOMMENDATION</div>
+                    <img class="img-16-9" src="./imgs/peppertones_musics.png" alt="musics" style="filter: grayscale(80%)"/>
+                </div>
+                <div id="s8" class="slides" style="display:none">
+
+                    <div class="title center "><img class="album-art" src="./imgs/album/1.jpg" alt=""> 1st Album</div>
+                    <iframe class="album-playlist" width="720" height="405" src="https://www.youtube.com/embed/?listType=playlist&list=PLksmX-CdzabiHLsftCyMKnIleV3bEo0Y1" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+                <div id="s9" class="slides" style="display:none">
+
+                    <div class="title center "><img class="album-art" src="./imgs/album/4.jpg" alt=""> 4th Album</div>
+                    <iframe class="album-playlist" width="720" height="405" src="https://www.youtube.com/embed/?listType=playlist&list=PL5DZ9VG0AfA1XZlfJlIhz_gQkd9B1xMg7" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+                <div id="s10" class="slides" style="display:none">
+
+                    <div class="title center "><img class="album-art" src="./imgs/album/3.jpg" alt=""> 3rd Album</div>
+                    <iframe class="album-playlist" width="720" height="405" src="https://www.youtube.com/embed/?listType=playlist&list=PLTSHWuLws1nclCFfXy0lQ9b3gPB1_6om4" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+        </div>
+        <div class="profile-tooltip">
+            <img src="" alt="" />
+            <p></p>
+        </div>
+
+        <div class="buttons">
+            <div class="btn" id="forward"></div>
+        </div>
+        <script charset="utf-8">
+            $('document').ready(function() {
+                $('.btn').css({'height': '0px'});
+
+                $('.album-art').click(function() {
+                    $('.album-playlist').toggle("slow");
+                })
+                $('#music-on').click(function() {
+                    $('#music-player').toggle("slow");
+                })
+
+                
+            });
+        </script>
+       <script src="./js/movement.js"></script> 
+       <script src="./js/profile.js"></script> 
+    </body>
+</html>
